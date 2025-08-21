@@ -36,7 +36,7 @@ const products = await productCollection.find({}).toArray();
                 {/* <p className="text-gray-700 dark:text-gray-300 text-sm">{p.desc}</p> */}
                 <p className="font-bold text-indigo-600 dark:text-indigo-400">{p.price}</p>
                 <Link
-                  href={`/products/${p.id}`}
+                  href={`/products/${p._id}`}
                   className="inline-flex items-center gap-1 mt-2 text-indigo-600 dark:text-indigo-400 text-sm hover:underline"
                 >
                   View Details <AiOutlineArrowRight className="w-4 h-4" />
