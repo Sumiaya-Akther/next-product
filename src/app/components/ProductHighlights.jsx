@@ -27,7 +27,7 @@ const products = await productCollection.find({}).toArray();
         <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {products.map((p) => (
             <div
-              key={p.product_id}
+              key={p._id}
               className="bg-white dark:bg-neutral-800 rounded-2xl overflow-hidden shadow hover:shadow-xl transition transform hover:-translate-y-1"
             >
               <img src={p.image} alt={p.name} className="w-full h-52 object-cover" />
