@@ -56,15 +56,15 @@ export default function Navbar() {
             <div className="h-9 w-28 animate-pulse rounded-lg bg-gray-200 dark:bg-neutral-800" />
           ) : session ? (
             <div className="flex items-center gap-3">
-              <div className="flex items-center gap-2 rounded-lg border px-3 py-1.5 shadow-sm bg-gray-50 dark:bg-neutral-800">
+              <div className="flex items-center gap-2  h-8 w-8 rounded-full shadow-sm bg-gray-50 dark:bg-neutral-800">
                 <img
                   src={session.user?.image || "/avatar.png"}
                   alt={session.user?.name || "User"}
                   className="h-8 w-8 rounded-full object-cover"
                 />
-                <span className="hidden max-w-[180px] truncate text-sm font-medium md:inline text-gray-900 dark:text-gray-100">
+                {/* <span className="hidden max-w-[180px] truncate text-sm font-medium md:inline text-gray-900 dark:text-gray-100">
                   {session.user?.name || "User"}
-                </span>
+                </span> */}
               </div>
               <button
                 onClick={() => signOut({ callbackUrl: "/" })}
