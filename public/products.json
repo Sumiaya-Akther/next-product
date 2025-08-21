@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Smart Watch",
+        "desc": "Track fitness & notifications",
+        "price": "$99",
+        "image": "/products/watch.png"
+    },
+    {
+        "id": 2,
+        "name": "Wireless Headphones",
+        "desc": "Crystal clear sound",
+        "price": "$149",
+        "image": "/products/headphones.png"
+    },
+    {
+        "id": 3,
+        "name": "Gaming Mouse",
+        "desc": "Precision & comfort",
+        "price": "$59",
+        "image": "/products/mouse.png"
+    }
+]
