@@ -1,20 +1,10 @@
 import Link from "next/link";
 import { AiOutlineArrowRight } from "react-icons/ai";
-// import { useEffect, useState } from "react";
 import dbConnect, { collectionNamesObj } from "@/lib/dbConnect";
-
 export default async function ProductHighlights() {
-//   const [products, setProducts] = useState([]);
-
-//   useEffect(() => {
-//     fetch("/products.json")
-//       .then((res) => res.json())
-//       .then((data) => setProducts(data))
-//       .catch((err) => console.error("Failed to load products:", err));
-//   }, []);
 
 const productCollection = dbConnect(collectionNamesObj.productCollection);
-const products = await productCollection.find({}).toArray();
+const products = await productCollection.find({}).limit(4).toArray();
 
   return (
     <section className="bg-indigo-50 dark:bg-neutral-900 py-16">
