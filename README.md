@@ -32,13 +32,6 @@ A simple web application built with **Next.js 15 (App Router)** that demonstrate
 
 ---
 
-## 🎯 Optional Enhancements
-- Loading spinner when submitting forms  
-- Toast message on successful product add  
-- Theme toggle (light/dark)  
-
----
-
 ## 🛠️ Tech Stack
 - **Next.js 15 (App Router)**  
 - **NextAuth.js** for authentication  
