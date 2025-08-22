@@ -1,17 +1,8 @@
 import Link from "next/link";
 import { AiOutlineArrowRight } from "react-icons/ai";
-// import { useEffect, useState } from "react";
 import dbConnect, { collectionNamesObj } from "@/lib/dbConnect";
 
 export default async function Product() {
-//   const [products, setProducts] = useState([]);
-
-//   useEffect(() => {
-//     fetch("/products.json")
-//       .then((res) => res.json())
-//       .then((data) => setProducts(data))
-//       .catch((err) => console.error("Failed to load products:", err));
-//   }, []);
 
 const productCollection = dbConnect(collectionNamesObj.productCollection);
 const products = await productCollection.find({}).toArray();
@@ -19,7 +10,7 @@ const products = await productCollection.find({}).toArray();
   return (
     <section className="bg-indigo-50 dark:bg-neutral-900 py-16">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-gray-900 dark:text-white text-center">Featured Products</h2>
+        <h2 className="text-3xl font-bold text-gray-900 dark:text-white text-center">All Products</h2>
         <p className="mt-2 text-gray-700 dark:text-gray-300 text-center text-sm sm:text-base">
           Our latest hand-picked products.
         </p>
