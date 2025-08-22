@@ -1,7 +1,6 @@
 # 🛍️ Next Product App
 
 A simple product management application built with **Next.js 15 (App Router)** and **NextAuth.js**.  
-This project is developed as part of **SCIC-11 Assignment 10: Job Task**.
 
 ---
 
