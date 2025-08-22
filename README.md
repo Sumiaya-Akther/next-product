@@ -37,5 +37,13 @@ A simple web application built with **Next.js 15 (App Router)** that demonstrate
 - **NextAuth.js** for authentication  
 - **Tailwind CSS** (for styling)  
 - **MongoDB / Mock Backend** (for storing products)  
+<<<<<<< HEAD
 
 ---
+=======
+
+---
+
+
+
+>>>>>>> 45a4ab14eabe4f24b8b58eb024adf4e2f7e19537
