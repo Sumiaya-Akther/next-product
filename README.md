@@ -7,7 +7,7 @@ A simple web application built with **Next.js 15 (App Router)** that demonstrate
 ## 📌 Features
 
 ### 1. Landing Page (`/`)
-- Contains **4 sections**: Navbar, Hero, Product Highlights, Footer  
+- Contains **7 sections**: Navbar, Hero, Product Highlights, Why Choose NextShop, Customers Say, Start Shopping Footer  
 - Navigation to **Login** and **Products** page  
 - Publicly accessible  
 
